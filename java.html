@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Type your name:</h2>
+    <input type="text" id="nameInput" onkeyup="showName()">
+    <p id="displayArea">Your name will appear here...</p>
+    <script>
+        function showName() {
+            let name = document.getElementById("nameInput").value;
+            document.getElementById("displayArea").innerHTML ="Hello," + name;
+        }
+    </script>
+
+
+
+    <button onclick="sayHello()">Click Me</button>
+
+    <h2 onmouseover="this.style.color='red'">Move mouse over me</h2>
+     <input type="text" onkeyup="alert('You typed something')" placeholder="Type here">
+     <body onload="alert('Page has loaded!')"></body>
+     <p ondblclick="this.style.backgroundColor='Yellow'">Double-click me</p>
+
+     <input type="text" onkeydown="alert('Key pressed!')" placeholder="press any key">
+     <select onchange="alert('You change the option!')">
+        <option>Apple</option>
+     <option>Banana</option>
+     <option>Orange</option>
+     </select>
+   
+     <script>
+        function sayHellow(){alert("Button was clicked!")}
+     </script>
+
+
+</body>
+</html>

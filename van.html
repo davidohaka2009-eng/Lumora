@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let Group1students = ["David" , "Donald" , "Dennis" , "Ogechi" , "ifeanyi" , "Eze"];
+        document.write(Group1students + "<br><br>");
+        let Group2students = ["Samuel" , "Emma" , "Bolaji" , "ajibola" , "victoria" , "Mayowa"];
+        document.write(Group2students + "<br><br>");
+         document.write("Number of Group1 students are :" + Group1students.length + "<br><br>");
+
+         document.write("Number of Group2 students are :" + Group2students.length + "<br><br>");
+        
+        document.write("Third Group1 students:" +  Group1students[2] + "<br><br>");
+
+        document.write("First Group2 students:" +  Group2students[0] + "<br><br>");
+
+        Group2students.push("Moyo", "Moyin", "Kamsy", "Tom");
+        document.write(Group2students + "<br><br>");
+
+        Group1students.unshift("Ola",  "Tobi", "davis");
+        document.write(Group1students + "<br><br>");
+
+        let Groups = Group1students.concat(Group2students);
+        document.write(Groups);
+
+        
+    </script> 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let random1to100 = Math.floor(Math.random() * 100) + 1;
+          document.write(random1to100 + "<br>");
+
+          let Number = [5, 10, 2, 25, 7];
+          document.write("Minimum. " + Math.min(...Number) + "<br>");
+          document.write("Maximum. " + Math.max(...Number));
+
+    </script>
+    <h2>Guess the number (1-10)</h2>
+    <input type="number" id="guess" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Check</button>
+    <p id="result"></p>
+    <script>
+        let secret = Math.floor(Math.random() * 10)+ 1;
+        function checkGuess() {
+         let userGuess = document.getElementById("guess").value;
+        if(userGuess == secret) {
+            document.getElementById("result").innerHTML = "Correct You guessed it";
+        }else {
+            document.getElementById("result").innerHTML = "Wrong! The number was " + secret;
+        }
+        }
+       
+
+
+
+        let random1to200 = Math.floor(Math.random() * 200) ;
+          document.write(random1to200 + "<br><br>");
+
+
+
+
+
+          let groupZstudents = ["David" , "Donald" , "Dennis" , "Ogechi" , "ifeanyi" 
+          , "Eze" , "Samuel" , "Emma" , "Bolaji" , "ajibola" , "victoria" , "Mayowa" ,
+           "Moyo", "Moyin", "Kamsy", "Tom"];
+           document.write(groupZstudents + "<br><br>");
+        let newGroupZstudents = groupZstudents.slice(4, 10); 
+        document.write(newGroupZstudents);
+    </script>
+</body>
+</html>
