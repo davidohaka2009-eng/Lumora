@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let score = prompt("Enter your score");
+         if (score >= 70) {
+            document.write("Grade: A");
+        }else if (score >=60) {
+             document.write("Grade: B");
+        } else if(score >=50){
+            document.write("Grade: C");
+        }else if(score >=40){
+            document.write("Grade: D");
+        }else if(score >=30){
+            document.write("Grade: E"); 
+        
+        }else if (score <29) {
+            document.write("Grade: F"); 
+        }
+            
+        
+
+        let username = prompt("Enter your username");
+        let password = prompt("Enter your password");
+
+        if(username == "Dav" && password == "123456"){
+            document.write("<h2>Login successful. Welcome, examMr.David!</h2>");
+        }else {
+            document.write("<h2>invalid username or password</h2>");
+        }
+           
+            
+            
+    </script>
+</body>
+</html>

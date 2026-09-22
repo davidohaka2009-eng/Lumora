@@ -1,0 +1,58 @@
+<!DOCTYPE >
+<html>
+<head>
+    <style>
+        .redbox {
+            width: 200px; height: 100px; background-color: green; text-align: center;
+        }
+         .bluetext{
+            color: orange;
+            font-size: 50px;
+         }
+    </style>
+</head>
+<body>
+    <div id="colorBox" class="redbox"></div>
+    <button onclick="changeColor()">Change Color</button>
+    <script>
+        function changeColor() {
+          document.getElementById("colorBox").style.backgroundColor = "red";
+        }
+    </script>
+
+
+    
+
+      
+     
+
+
+
+    <h2 id="demo">Welcome Student !</h2>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Hello from javaScript";
+        }
+    </script>
+
+    <h2 id="dateArea">Click the button to see today's date</h2>
+    <button onclick="showDate()">Show Date</button>
+    <script>
+        function showDate() {
+            document.getElementById("dateArea").innerHTML = Date();
+        }
+    </script>
+
+
+
+
+    <div id="textColor" class="bluetext">hi!!!!!</div>
+    <button onclick="colorBlue()">click me</button>
+    <script>
+        function colorBlue() {
+          document.getElementById("textColor").style.color = "blue";
+        }
+    </script>
+</body>
+</html>
